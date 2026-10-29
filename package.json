@@ -1,0 +1,29 @@
+{
+  "name": "solana-validator-block-ordering-experiment",
+  "version": "1.0.0",
+  "description": "Empirical measurement pipeline to test transaction ordering across Solana validator clients",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dry-run": "DRY_RUN=true node index.js",
+    "test": "node test_ordering.js",
+    "verify": "node index.js && cat MEASUREMENT_REPORT.json"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "solana",
+    "validator",
+    "block-ordering",
+    "scheduler",
+    "jito",
+    "agave",
+    "firedancer"
+  ],
+  "author": "OpenClaw Research Swarm",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.95.8"
+  }
+}
